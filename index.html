@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="icon" href="http://example.com/favicon.png">
+  <title>Sorting Algorithms</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' media='screen' href='components/styles/styles.css'>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="components/js/Sorting Algorithms.js"></script>
+
+
+
+</head>
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="components/videos/video.mp4" type="video/mp4">
+  </video>
+  <h3>Sorting Algorithms</h3>
+
+  <div class="container-md">
+    <form>
+      <div>
+        <label for="input_data" class="col-sm col-form-label text-monospace"> Please input data</label>
+        <input id="input_data" class="form-control form-control-sm" type="object" placeholder="Ex: 5,1,0,8,1,0,15,8,5"
+          required>
+        <label id="conditional_input" class="col-sm col-form-label text-monospace" style="display:none; color: red;">
+          Please Enter Input Data Here</label>
+      </div>
+      <div>
+        <label for="algorithms" class="col-sm col-form-label text-monospace">Choose a sorting algorithm:</label>
+        <select id="algorithms" class="custom-select mr-sm-2 form-control form-control-sm" name="algorithms"
+          onchange="onchange_function()">
+          <option value="select_algo" selected>Select an Algorithm</option>
+          <option value="selection_sort">Selection Sort</option>
+          <option value="bubble_sort">Bubble Sort</option>
+          <option value="recursive_bubble_sort">Recursive Bubble Sort</option>
+          <option value="insertion_sort">Insertion Sort</option>
+          <option value="recursive_insertion_sort">Recursive Insertion Sort</option>
+          <option value="merge_sort">Merge Sort</option>
+          <option value="quick_sort">Quick Sort</option>
+          <option value="heap_sort">Heap Sort</option>
+        </select>
+      </div>
+      <div>
+        <label for="output_data_label" id="output_data_label" class="col-sm col-form-label text-monospace"
+          style="display:none;"></label>
+        <input id="output_data" class="form-control mr-sm-2 form-control form-control-sm" type="object"
+          style="display:none;">
+      </div>
+      <button id="code_btn" class="btn btn-primary bg-light p-2 text-dark" onclick="clicking_func()">get the
+        code</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
